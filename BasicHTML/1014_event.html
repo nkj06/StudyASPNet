@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이벤트 예제</title>
+        <script>
+            window.onload = function() {
+                var button = document.getElementById("button1");
+                // 익명 함수
+                // button.onclick = function() {
+                //     alert("익명함수콜");
+                // }
+                button.onclick = buttonClick;
+            };
+
+            function buttonClick() {
+                alert("20200807 Changed!!");
+            }
+        </script>
+    </head>
+    <body>
+        <input id="button1" type="button" value="입력"/>
+        <button onclick="alert('두번째');">두번째</button>
+    </body>
+</html>
