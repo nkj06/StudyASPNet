@@ -19,7 +19,17 @@
                 // alert(key + " : " + product[key]);
                 result += key + " : " + product[key] + "\n";
             }
-            alert(result);
+            // alert(result);
+
+            // 객체선언 2
+            var person = {
+                name: "김민수",
+                have: function (food) {
+                    alert(this.name + "이" + food + "을(를) X먹습니다.");
+                }
+            }
+
+            person.have("죽");
         </script>
     </head>
 </html>
